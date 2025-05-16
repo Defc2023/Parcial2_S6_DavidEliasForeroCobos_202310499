@@ -1,0 +1,49 @@
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let airline of airlines.slice(0, 3)">
+      <div
+        class="card text-white airline-card"
+        [ngStyle]="{ 'background-color': airline.identityColor }"
+        style="aspect-ratio: 1 / 1; width: 100%;"
+      >
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <h5 class="card-title mb-0">{{ airline.airlineName }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div
+        class="card text-white airline-card"
+        [ngStyle]="{ 'background-color': airlines[3].identityColor }"
+        style="aspect-ratio: 1 / 1; width: 100%;"
+      >
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <h5 class="card-title mb-0">{{ airlines[3].airlineName }}</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center">
+      <div
+        class="card andes-card border"
+        style="aspect-ratio: 1 / 1; width: 100%; border-width: 2px;"
+      >
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <h5 class="card-title text-dark mb-0">Aerolíneas de los Andes</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div
+        class="card text-white airline-card"
+        [ngStyle]="{ 'background-color': airlines[4].identityColor }"
+        style="aspect-ratio: 1 / 1; width: 100%;"
+      >
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <h5 class="card-title mb-0">{{ airlines[4].airlineName }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
